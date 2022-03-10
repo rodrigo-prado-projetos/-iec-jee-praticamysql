@@ -8,6 +8,7 @@ import javax.ejb.TransactionAttributeType;
 public interface RepositorySession {
     @TransactionAttribute(TransactionAttributeType.NEVER)
     public CategoriaRepository getCategoriaRepository();
+
+    @TransactionAttribute(TransactionAttributeType.NEVER)
+    public ProdutoRepository getProdutoRepository();
 }
-
-
